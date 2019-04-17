@@ -1,0 +1,38 @@
+body {
+    background: #e8e8e8;
+}
+.container {
+    margin: 10px auto 0px auto;
+    border-top: solid 5px #1D440E;
+    border-right: solid 5px #1F437C;
+    border-bottom: solid 5px #AA201F;
+    border-left: solid 5px #D8AC0D;
+    max-width: 60%;
+}
+#crest {
+    width: 150px;
+    height: auto;
+    float: left;
+}
+h1 {
+    text-align: center;
+ }
+h4 {
+    text-align: center;
+    margin-top: -30px;
+}
+h2 {
+    text-align: center;
+    margin-top: -30px;
+}
+
+h3 {
+    text-align: center;
+}
+#header {
+    width: 300px;
+    height: auto;
+}
+#gif {
+    border: solid 1px black;
+}

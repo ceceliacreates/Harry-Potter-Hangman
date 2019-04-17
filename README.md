@@ -23,7 +23,7 @@ broom: https://media.giphy.com/media/pYCZPDymIVjeo/giphy.gif
 werewolf: https://media.giphy.com/media/pYCZPDymIVjeo/giphy.gif
 snape: https://media.giphy.com/media/pYCZPDymIVjeo/giphy.gif
 
-starter gif (platform 9 3/4) https://media.giphy.com/media/pYCZPDymIVjeo/giphy.gif
+starter gif (platform 9 3/4) https://media.giphy.com/media/MNliqYN8ZSZQk/giphy.gif
 
 
 
