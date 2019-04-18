@@ -39,12 +39,12 @@ document.querySelector("#triesleft").innerText = "Tries Left: " + triesLeft;
 document.querySelector("#wincount").innerText = "Wins: " + winCount;
 let guessedLetter;
 
-//creates empty array to hold guessed letters
+//creates empty array to hold guessed letters THIS WORKS
 
 let guessedWrong = [];
 let guessedRight = [];
 
-//creates string of blanks based on length of currentSolution
+//creates string of blanks based on length of currentSolution THIS WORKS
 let currentWord;
 
 function resetBlanks() {
@@ -60,10 +60,13 @@ document.onkeypress = function(e) {
   guessedLetter = e.key.toLowerCase();
   //checks guessed letter against solution
 if (currentSolution.includes(guessedLetter)) {
-  //adds guessed letter to array of correctly guessed letters
+  //adds guessed letter to array of correctly guessed letters ISSUE HERE!!!! Letter is not pushing, guessedRight returns 1???!!
+  //guessedRight is an empty array BEFORE this, this breaks it
 guessedRight = guessedRight.push(guessedLetter);
-//creates regex of correctly guessed letters
+//creates regex of correctly guessed letters ERROR HERE!!! guessedRight.join() is not a function???!!
 const regexp = new RegExp("[^" + guessedRight.join("") + "]", "gi");
+
+//NOTHING AFTER THIS RUNS BECAUSE OF ERROR SO I DON'T KNOW IF IT WORKS
 //resets currentword to include all correctly guessed letters
 currentWord = currentWord.replace(regexp, "_");
 //checks if puzzle is solved
