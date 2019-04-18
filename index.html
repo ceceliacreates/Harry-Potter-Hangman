@@ -13,36 +13,60 @@
       <div class="row">
         <div class="col-8">
           <img src="assets/images/hogwarts-crest-color.png" id="crest" />
-          <img src="assets/images/harry-potter-logo.png" id="header">
+          <img src="assets/images/harry-potter-logo.png" id="header" />
           <h4>And the Game of Hangman</h4>
         </div>
       </div>
       <div class="row">
         <div class="col-12">
-          <h2>Press any key to start guessing!</h2>
+          <h2 id="solution">Press any key to start guessing!</h2>
         </div>
-      </div>
-        <div class="row">
-            <div class="col-6">
-                <img src="https://media.giphy.com/media/MNliqYN8ZSZQk/giphy.gif" id="gif">
-            </div>
-            <div class="col-6">
-                <h3>BLANKS HERE</h3>
-            </div>
       </div>
       <div class="row">
         <div class="col-6">
-          <h3>TRIES LEFT</h3>
+          <img
+            src="https://media.giphy.com/media/MNliqYN8ZSZQk/giphy.gif"
+            id="gif"
+          />
         </div>
         <div class="col-6">
-          <h3>LETTERS GUESSED</h3>
+          <h3 id="currentword">BLANKS HERE</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <h3 id="triesleft">TRIES LEFT</h3>
+        </div>
+        <div class="col-6">
+          <h3 id="lettersguessed">LETTERS GUESSED</h3>
         </div>
       </div>
       <div class="row">
         <div class="col-12">
-          <h3># OF WINS</h3>
+          <h3 id="wincount"># OF WINS</h3>
         </div>
       </div>
     </div>
+    
+    <script src="assets/javascript/game.js"></script> 
+    <!--<script>
+      let guesses = 0;
+      const prevGuesses = [];
+
+      while (guesses < 10) {
+        const userInput = prompt("type something here");
+
+        prevGuesses.push(userInput);
+
+        let testString = "Platypus";
+
+        const regexp = new RegExp("[^" + prevGuesses.join("") + "]", "gi");
+
+        console.log(regexp);
+        console.log(testString.replace(regexp, "_"));
+
+        guesses++;
+      }
+    </script> -->
   </body>
 </html>
